@@ -1,40 +1,58 @@
-body{
+html {
 	margin: 0;
 	padding: 0;
+	/*background: #eee9df url(../images/tile1.png) center top repeat; */
 }
 
-div.wrapper{
-	width: 960px; 
-	margin: 0 auto; 
-	overflow: hidden;
+body {
+	width: 990px;
+	margin: 0 auto;
+	font: 10pt/1.5em Helvetica,"Helvetica neue", Arial, sans-serif;
 }
 
-
-div.wrapper div.header{
-	width: 960px; 
-	height: 100px; 
+header {
+	width: 990px; 
+	height: 126px; 
 	margin-bottom: 10px; 
-	background-color: #000000;
+	background: url(../images/header_puc.jpg) center top no-repeat;
 }
 
+header h1 {
+	font: 32pt Helvetica,"Helvetica neue", Arial, sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+	color: #e5b7ad;
+	padding-top: 30px ;
+	text-shadow: 1px 1px 2px #fff; 
+}
 
-div.wrapper div.content{ 
-	width: 959px; 
-	min-height: 300px; 
-	margin-bottom: 10px; 
-	float: left; 
+section {
+
+	float: left;
+	width: 990px;
+	min-height: 300px;
+	/*background: url(../images/aside-bg.png) center top no-repeat; */
+	padding-bottom: 10px;
 	background-color: #0000FF;
+	margin: 0 0 10px 0;
+
 }
 
-div.wrapper div.footer{ 
-	width: 100%; 
-	height: 50px; 
-	margin-top: 10px; 
-	overflow: hidden; 
-	background-color: #008000;
+section h2 {
+	font: 14pt Helvetica,"Helvetica neue", Arial, sans-serif;
+	text-align: center;
+	color: #493831;
+	padding-top: 10px;
+	margin: 0;
+	text-shadow: 1px 1px 2px #fff;
 }
-/*div.wrapper div.content figure, figure img{ 
-	margin-bottom: 1rem; text-align: center;
-	display: inline-block;
-    border: 10px solid;
-}*/
+
+footer{
+	clear:both !important;
+	width:970px;
+	height: 100px;
+	padding: 10px;
+	background-color: #008000;
+	
+
+}
