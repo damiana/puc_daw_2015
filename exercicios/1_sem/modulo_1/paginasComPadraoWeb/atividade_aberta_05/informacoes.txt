@@ -1,0 +1,17 @@
+Como projeto interdisciplinar do primeiro módulo do curso, você deverá desenvolver um álbum dos alunos da sua turma do curso de especialização. A ideia é implementar algo parecido com os Yearbooks publicados pelas escolas americanas.
+
+
+
+
+REQUISITOS
+
+Durante a execução desta atividade, você deve observar os seguintes requisitos, que serão usados como critério de avaliação do resultado:
+
+	- Você deve entregar apenas duas páginas em HTML e CSS;
+	- NÃO use um servidor nem banco de dados. Os arquivos devem ser construídos manualmente. O uso de servidores e de scripts do lado do servidor serão objeto de avaliação da segunda disciplina;
+	- NÃO use JavaScript nem APIs, bibliotecas ou frameworks JavaScript. Isso será objeto de avaliação da terceira disciplina;
+	- NÃO use um framework para gerar o layout. O objetivo aqui é avaliar o seu código. O layout será objeto de avaliação da quarta disciplina;
+	- As fotos devem possuir uma relação de aspecto de 3x4, com a resolução de 240 pixels de largura por 320 pixels de altura;
+	- O seu código HTML5 deve ser válido (não conter erros) e bem formado (respeitar as regras sintáticas da linguagem);
+	- Os elementos da HTML5 devem ser usados de acordo com o seu significado, respeitando a semântica da linguagem;
+	- O seu código CSS deve ser válido e bem formado.
