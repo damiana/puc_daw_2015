@@ -23,7 +23,7 @@ header h1 {
 	font: 32pt Helvetica,"Helvetica neue", Arial, sans-serif;
 	text-align: center;
 	text-transform: uppercase;
-	color: #e5b7ad;
+	color: #4682B4;
 	padding-top: 30px ;
 	text-shadow: 1px 1px 2px #fff; 
 }
@@ -52,6 +52,13 @@ figure figcaption h4 {
 	text-align: center;
 	color: #e5b7ad;
 	padding-top: 10px; 
+}
+
+figure h5 {
+	font: 13pt Helvetica,"Helvetica neue", Arial, sans-serif;
+	text-align: center;
+	color: #4682B4;
+	margin: 3px;
 }
 
 div.wrapper div.perfil{ 

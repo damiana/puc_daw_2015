@@ -1,15 +1,31 @@
 $(document).ready(function(){
 
-	$.ajax({ // ajax call starts
-		type: 'POST',
-		dataType: 'jsonp',
-    	url: 'http://oglobo.globo.com/blogs/box-capas.asp',
-       	success: function (data, status) {
-       		alert('sucesso: ' + status);
-        },
-        error: function (xOptions, textStatus) {
-        	alert('erro ao ler o json ' + textStatus);
-        }
-    });
-	alert('aaaaaaaaaaaaa');
+	$.ajax({
+		type: 'GET',
+    url: 'js/box-capas2.json',
+    cache: false,
+		dataType: 'json',
+    success: function(response){
+      montaBlog(response);
+    },
+    error: function(jqXHR, exception) {
+      if (exception === 'parsererror') {
+        alert('Requested JSON parse failed.');
+        
+      } else if (exception === 'timeout') {
+        alert('Time out error.');
+      }
+    }
+  });
+
+  function montaBlog(blogs) {
+    $.each(blogs, function(index, blog) {
+        //console.log("blog: ", blog.nome)
+        var textoTruncado = blog.texto.substring(0,300); //trunca o texto
+
+        $('.wrapper section')
+        .append('<a href="'+blog.link+'" title="'+blog.nome+'" target="_blank"> <figure><img src="'+blog.imagem_destaque+'" alt="'+blog.dirblog+
+          '"/> <h5>'+blog.nome+'</h5> <figcaption><h4>'+textoTruncado+'... </h4></figcaption> </figure></a>');
+    });    
+  }
 });
