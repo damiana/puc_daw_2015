@@ -1,0 +1,8 @@
+1 - loja virtual em PHP contendo: 
+     - login
+     - cadastro
+     - busca de voos e hospedagem
+     - compra de voos e hospedagem
+     - visualizar o carrinho de compras
+     - confirmar compras e visualizar histórico
+     - implementação de sessão e cookie
